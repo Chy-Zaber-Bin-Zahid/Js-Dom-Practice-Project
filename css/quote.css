@@ -1,0 +1,114 @@
+.quote-section{
+  height: 100vh;
+  position: relative;
+}
+
+.quote-back{
+  width: 100%;
+  height: 100%;
+  background-image: url(/quoteback.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  position: absolute;
+  z-index: -1;
+  filter: blur(.5px);
+}
+
+.quote-main{
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 3rem;
+}
+
+.quote-text-area{
+  width: 70rem;
+  padding: 3rem;
+  background-color: #ffffff;
+  border-radius: 10px;
+  background-color: gray;
+  box-shadow: 10px 10px 30px 7px black;
+  color: white;
+}
+
+.quote-text{
+  font-size: 2rem;
+  line-height: 1.5;
+  font-style: italic;
+}
+
+.quote-author{
+  border: 1 px solid red;
+  font-size: 1.7rem;
+  text-align: right;
+  line-height: 1.5;
+  padding-right: 1rem;
+  display: flex;
+  justify-content: end;
+  gap: .7rem;
+  align-items: center;
+}
+
+.quote-btn-main{
+  width: 70rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  display: flex;
+  align-items: center;
+}
+
+.quote-btn-main button{
+  width: 10rem;
+  padding: 2rem;
+  border-radius: 5px;
+  border: 5px solid gray;
+  box-shadow: 10px 10px 30px 7px black;
+}
+
+.quote-btn-main button:hover {
+  cursor: pointer;
+}
+
+.green{
+  background-color: rgb(0, 230, 0);
+  color: rgb(0, 230, 0);
+}
+
+.green:hover {
+  background-color: rgb(1, 201, 1);
+  color: rgb(1, 201, 1);
+}
+
+.yellow{
+  background-color: yellow;
+  color: yellow;
+}
+
+.yellow:hover {
+  background-color: rgb(228, 228, 1);
+  color: rgb(228, 228, 1);
+}
+
+.blue{
+  background-color: skyblue;
+  color: skyblue;
+}
+
+.blue:hover {
+  background-color: rgb(77, 202, 252);
+  color: rgb(77, 202, 252);
+}
+
+.orange{
+  background-color: orange;
+  color: orange;
+}
+
+.orange:hover {
+  background-color: rgb(223, 148, 9);
+  color: rgb(223, 148, 9);
+}

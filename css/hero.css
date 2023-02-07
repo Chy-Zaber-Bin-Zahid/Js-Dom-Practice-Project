@@ -1,0 +1,61 @@
+.section-hero{
+  height: 50vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.hero-back{
+  background-image: url(/edu.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  z-index: -1;
+}
+
+.hero-main{
+  width: 80rem;
+  padding: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #ffffffc0;
+  gap: 1.5rem;
+  border-radius: 10px;
+}
+
+.hero-title{
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+.hero-p{
+  font-size: 2rem;
+}
+
+.hero-input,
+.hero-drop,
+.hero-btn{
+  width: 15rem;
+  text-align: center;
+  padding: 1rem;
+  font-size: 1.2rem;
+  font-weight: bold;
+  border: 2px solid gray;
+}
+
+.hero-drop {
+  background-color: rgb(201, 193, 193);
+}
+
+.hero-btn{
+  background-color: rgb(255, 175, 27);
+}
+
+.hero-btn:hover {
+  background-color: rgb(233, 152, 3);
+  cursor: pointer;
+}

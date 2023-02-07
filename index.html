@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- linking css file -->
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/nav.css" />
+    <link rel="stylesheet" href="css/quote.css" />
+    <link rel="stylesheet" href="css/hero.css" />
+    <link rel="stylesheet" href="css/series.css" />
+    <link rel="stylesheet" href="css/magic.css" />
+
+    <title>Four Js Project</title>
+  </head>
+  <body>
+    <header class="header">
+      <nav class="nav">
+        <a href="#quote"> Quote Box </a>
+        <a href="#converter"> Hero Converter </a>
+        <a href="#series"> Series </a>
+        <a href="#magic">Magic Box</a>
+      </nav>
+    </header>
+
+    <main>
+      <!-- quote section -->
+      <section id="quote" class="quote-section">
+        <div class="quote-back"></div>
+        <div class="quote-main">
+          <div class="quote-text-area">
+            <p class="quote-text">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam
+              doloribus, excepturi dicta expedita incidunt ut animi possimus,
+              quas recusandae architecto eos iste eum, cum nesciunt. Fugit nam
+              quo at aspernatur.
+            </p>
+            <p class="quote-author">
+              &mdash; <span class="author-name">Random</span>
+            </p>
+          </div>
+          <div class="quote-btn-main">
+            <button onclick="changeGreen()" class="green">Green</button>
+            <button onclick="changeYellow()" class="yellow">Yellow</button>
+            <button onclick="changeBlue()" class="blue">Skyblue</button>
+            <button onclick="changeOrange()" class="orange">Orange</button>
+          </div>
+        </div>
+      </section>
+
+      <!-- hero section -->
+      <section id="converter" class="section-hero">
+        <div class="hero-back"></div>
+        <div class="hero-main">
+          <level class="hero-title">Convert</level>
+          <input
+            class="hero-input"
+            required
+            placeholder="Enter a number"
+            type="number"
+          />
+          <select class="hero-drop" required>
+            <option value="kg">lb to kg</option>
+            <option value="lb">kg to lb</option>
+          </select>
+          <button onclick="check()" class="hero-btn">Go</button>
+          <p class="hero-p"></p>
+        </div>
+      </section>
+
+      <!-- series part -->
+      <section id="series" class="section-series">
+        <div class="series-back"></div>
+        <div class="series-main">
+          <div class="series-behind">
+            <div class="series-first-two">
+              <label for="">Input Series of Number</label>
+              <input
+                placeholder="Enter number with a coma"
+                class="series-input"
+                type="text"
+              />
+            </div>
+            <div class="series-first-two">
+              <label for="">Max :</label>
+              <p class="max"></p>
+            </div>
+            <div class="series-first-two">
+              <label for="">Min :</label>
+              <p class="min"></p>
+            </div>
+            <div class="series-first-two">
+              <label for="">Sum :</label>
+              <p class="sum"></p>
+            </div>
+            <div class="series-first-two">
+              <label for="">Average :</label>
+              <p class="average"></p>
+            </div>
+            <div class="series-first-two">
+              <label for="">Reverse Order :</label>
+              <p class="reverse"></p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- magic part -->
+      <section id="magic" class="section-magic">
+        <div class="magic-back"></div>
+        <div class="magic-main">
+          <div class="magic-text">
+            <textarea
+              class="magic-textarea"
+              placeholder="Enter any Text"
+            ></textarea>
+          </div>
+          <div class="magic-btn">
+            <button onclick="clearText()">Clear It</button>
+            <button class="btn-cap" onclick="cap()">Capitalize Up</button>
+            <button onclick="sorted()">Sort</button>
+            <button onclick="revText()">Reverse</button>
+            <button onclick="strip()">Strip Blank</button>
+            <button onclick="aNum()">Add Numbers</button>
+            <button onclick="shuffle()">Shuffle</button>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <script src="/js/script.js"></script>
+  </body>
+</html>

@@ -1,0 +1,57 @@
+/* magic part */
+.section-magic {
+  height: 100vh;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.magic-back {
+  background-image: url(/magicback.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  z-index: -1;
+}
+
+.magic-main {
+  width: 80rem;
+  border-radius: 5px;
+  background-color: rgba(0, 0, 0, 0.486);
+  padding: 3rem;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+textarea {
+  width: 100%;
+  height: 50vh;
+  padding: 2rem;
+  font-size: 1.5rem;
+  color: black;
+  border-radius: 10px;
+  border: 3px solid gray;
+}
+
+.magic-btn {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  /* padding: 0 1rem; */
+}
+
+.magic-btn button {
+  width: 13%;
+  height: 5rem;
+  font-size: 1.4rem;
+  font-weight: bold;
+  letter-spacing: 0.1rem;
+}
+
+.magic-btn button:hover {
+  cursor: pointer;
+}
