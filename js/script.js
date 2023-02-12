@@ -19,24 +19,28 @@ change();
 function changeGreen() {
   document.querySelector(".quote-text-area").style.color = "black";
   document.querySelector(".quote-text-area").style.backgroundColor = "green";
+  document.querySelector(".quote-text-area").style.border = "3px solid red";
   change();
 }
 
 function changeYellow() {
   document.querySelector(".quote-text-area").style.color = "blue";
   document.querySelector(".quote-text-area").style.backgroundColor = "yellow";
+  document.querySelector(".quote-text-area").style.border = "3px solid lime";
   change();
 }
 
 function changeBlue() {
   document.querySelector(".quote-text-area").style.color = "red";
   document.querySelector(".quote-text-area").style.backgroundColor = "skyblue";
+  document.querySelector(".quote-text-area").style.border = "3px solid yellow";
   change();
 }
 
 function changeOrange() {
   document.querySelector(".quote-text-area").style.color = "green";
   document.querySelector(".quote-text-area").style.backgroundColor = "orange";
+  document.querySelector(".quote-text-area").style.border = "3px solid skyblue";
   change();
 }
 
